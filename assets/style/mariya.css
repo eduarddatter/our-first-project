@@ -15,7 +15,7 @@ margin: 0 auto;
 background: orange;
 }
 .main{
- display: flex;   
-    background-image: url(assets/images/Rectangle2.png);   
+display: flex;   
+background-image: url(assets/images/rectangle2.png);   
 
 }
