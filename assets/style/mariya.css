@@ -4,24 +4,36 @@ border: 1px solid green;
 .nav{
 display: grid;
 grid-template-rows: 1fr;
-grid-template-columns: 20% 1.5fr 26px 26px 130px 26px 216px;
+grid-template-columns: 15% 2fr 26px 26px 130px 26px 216px;
 justify-items: stretch;
 align-items: center;
 border: 1px solid green;
 grid-gap: 5px;
 padding: 10px;
 height: auto;
-font-family:;
-
-
-
 }
-a{
+
+
+
+
+.a{
     display: grid;
+    display: block;
     grid-column: 2/3;
+    display: inline-block;
     width: 10vw;
     text-align: center;
+    text-decoration: none;
     border: 1px solid green;
+    
+}
+.main{
+    background-image: url(our-first-project\assets\images\rectangle2.png);
+    background-position: center;
+    background-size: cover;
+    background-position: 25px 17px; 
+    height: 400px;
+    width: 400px;
 }
 
 
