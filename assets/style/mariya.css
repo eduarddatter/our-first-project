@@ -1,3 +1,4 @@
+
 html body{
 border: 1px solid green;
 }
@@ -12,28 +13,23 @@ grid-gap: 5px;
 padding: 10px;
 height: auto;
 }
-
-
-
-
 .a{
     display: grid;
     display: block;
     grid-column: 2/3;
-    display: inline-block;
+    display: inline;
     width: 10vw;
     text-align: center;
     text-decoration: none;
     border: 1px solid green;
     
 }
-.main{
-    background-image: url(our-first-project\assets\images\rectangle2.png);
+.img{
+    background-image: url(our-first-project\assets\images\rectangle.png);
     background-position: center;
     background-size: cover;
-    background-position: 25px 17px; 
     height: 400px;
-    width: 400px;
+    width: 100%;
 }
 
 
