@@ -1,17 +1,43 @@
+@font-face {
+    font-family: "VantaLight";
+    src: url(../fonts/AnyConv.com__ofont.ru_VantaLight.woff),
+    url(../fonts/AnyConv.com__ofont.ru_VantaLight.woff2);
+    font-size: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Vanta";
+    src: url(../fonts/AnyConv.com__ofont.ru_Vanta.woff),
+    url(../fonts/AnyConv.com__ofont.ru_Vanta.woff2);
+    font-size: 400;
+    font-style: normal;
+}
 
 html body{
 border: 1px solid green;
+font-family: "Vanta", Arial, sans-serif;
+}
+.headr{
+    width: 1920px;
+height: 120px;
+flex-shrink: 0;
+padding-left: 20em;
 }
 .nav{
-display: grid;
+    display: flex;
+/*display: grid;
 grid-template-rows: 1fr;
-grid-template-columns: 15% 2fr 26px 26px 130px 26px 216px;
+grid-template-columns: 15% 2fr 26px 26px 130px 26px 216px;*/
 justify-items: stretch;
 align-items: center;
 border: 1px solid green;
 grid-gap: 5px;
 padding: 10px;
 height: auto;
+background: #FFF;
+box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.10);
+padding-left: 160px;
+padding-right: 160px;
 }
 .a{
     display: grid;
@@ -22,8 +48,26 @@ height: auto;
     text-align: center;
     text-decoration: none;
     border: 1px solid green;
-    
-}
+    }
+    .logo{
+        width: 164px;
+        height: 80px;
+        flex-shrink: 0;
+    }
+    .address{
+        display: flex;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        color: #363431;
+        
+width: 362px;
+height: 56px;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+    }
 .img{
     background-image: url(our-first-project\assets\images\rectangle.png);
     background-position: center;
