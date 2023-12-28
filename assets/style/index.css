@@ -200,9 +200,5 @@ body {
   height: 1px;
   background-color: #363431;
   left: 0;
-  top: 100%
-  transform: translateX(42%);
-}
-
-.footer {
+  top: 100%;
 }
