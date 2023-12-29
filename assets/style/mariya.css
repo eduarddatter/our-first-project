@@ -17,6 +17,7 @@
 }
 
 html body{
+    height: 100%;
     background: #FFF;
     border: 1px solid green;
     font-family: "Vanta", Arial, sans-serif;
@@ -188,6 +189,9 @@ html body{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    /*box-sizing: border-box;
+	min-height: 100%;
+	padding-bottom: 90px;*/
 }
 .section1
 .section2
@@ -281,12 +285,13 @@ html body{
 .container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    width: 1920px;
-    height: 448px;
+    grid-template-rows: repeat(4, 1fr);
+    width: 100%;
     flex-shrink: 0;
     background: #FFF;
     box-shadow: 0px -2px 8px 0px rgba(0, 0, 0, 0.10);
+    height: 20em;
+    margin-top: 20em;
 }
 .footer__menu
 .footer__social
