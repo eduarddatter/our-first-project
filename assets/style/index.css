@@ -18,12 +18,6 @@ html {
   box-sizing: border-box;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
 body {
   margin: 0 auto;
   min-width: 320px;
@@ -33,20 +27,19 @@ body {
 }
 
 .section-studio {
-  max-width: 1328px;
-  padding: 0 296px 0 295px;
+  max-width: 1360px;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 1329px;
+  max-width: 1360px;
+  padding: 0 15px 0 15px;
   background-color: #fff;
 }
 
 .section__title {
-  /* width: 524px;
-  height: 112px; */
-  max-width: 100%;
+  max-width: 524px;
+  margin: 120px auto 60px;
   text-align: center;
   font-family: "Vanta", Arial, sans-serif;
   font-size: 3em;
@@ -54,95 +47,97 @@ body {
   color: #363431;
 }
 
+.section-studio-item {
+  max-width: 1328px;
+}
+
 .section-studio__items {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr 1fr;
-  /* grid-template-columns: repeat(4, 1fr);
+  margin-top: 120px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-template-rows: 1fr 1fr;
   grid-template-areas:
     "img1 img1 img2 img2"
-    "img1 img1 img3 img4"; */
+    "img1 img1 img3 img4";
   gap: 32px;
 }
 
-.section-studio_item-1 {
-  /* width: 649px;
-  height: 608px; */
-  /* width: 100%;
-  height: 100%; */
-  /* object-fit: cover; */
-  /* display: block;
-  max-width: 100%;
-  height: auto; */
+.section-studio-item_1 {
+  padding-bottom: 456px;
   background-size: cover;
   background-image: url(../images/1.1.png);
   grid-area: img1;
   font-family: "Vanta", Arial, sans-serif;
   font-size: 1.75rem;
+  border-radius: 16px;
   justify-content: start;
-  grid-column: 1/3;
-  grid-row: 1/3;
 }
 
-/* .section-studio_item-1__text {
-  width: 400px;
-  height: 104px;
-  padding: 48px 201px 456px 48px;
-} */
-
-.section-studio_item-2 {
-  /* width: 648px;
-  height: 288px; */
-  /* width: 100%;
-  height: 100%;
-  object-fit: cover; */
+.section-studio-item_2 {
+  display: flex;
+  flex-direction: column-reverse;
   background-size: cover;
   background-image: url(../images/1.2.png);
   grid-area: img2;
-  grid-column: 3/5;
-  grid-row: 1/2;
+  border-radius: 16px;
+  vertical-align: bottom;
 }
 
-.section-studio_item-3 {
-  /* width: 306px;
-  height: 288px; */
+.section-studio-item_3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: #c6c6c6;
   grid-area: img3;
+  border-radius: 16px;
   justify-content: center;
-  grid-column: 3/4;
-  grid-row: 2/3;
 }
 
-.section-studio_item-4 {
-  /* width: 306px;
-  height: 288px; */
+.section-studio-item_4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: #c7df9e;
   grid-area: img4;
-  justify-content: center;
-  grid-column: 4/5;
-  grid-row: 2/3;
+  border-radius: 16px;
+}
+
+.section-studio__text {
+  max-width: 400px;
+  padding: 48px 0px 48px 48px;
+  font-family: "Vanta", Arial, sans-serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 1.3;
+  color: #fff;
+}
+
+.section-studio__text_small {
+  max-width: 306px;
+  text-align: center;
+  font-family: "Vanta", Arial, sans-serif;
+  font-size: 1.375rem;
+  font-weight: 400;
+  line-height: 1.3;
+  color: #fff;
 }
 
 .section-promotions {
   max-width: 1920px;
-  height: 1024px;
+  max-height: 1024px;
   background-color: #f3f3f3;
 }
 
 .section-promotions__image {
-  /* background-image: url(../images/1.3.png);
-  background-repeat: no-repeat;
-  background-size: cover; */
   height: 100%;
 }
 
 .section-promotions__section-inner {
-  margin: 0 auto;
+  max-width: 1100px;
+  /* margin: 0 auto; */
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* margin: 312px 296px 288px 296px; */
   align-items: center;
 }
 
@@ -155,6 +150,7 @@ body {
 }
 
 .section-promotions__text {
+  max-width: 512px;
   margin: 24px 0 24px 0;
   font-family: "VantaLight", Arial, sans-serif;
   font-size: 1.125rem;
@@ -173,7 +169,8 @@ body {
 }
 
 .section-promotions__price--false {
-  /* display: contents; */
+  display: inline-flex;
+  flex-direction: column-reverse;
   font-size: 1.125rem;
   text-decoration: line-through;
 }
