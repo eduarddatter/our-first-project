@@ -23,7 +23,7 @@ html body{
     border: 1px solid green;
     font-family: "Vanta", Arial, sans-serif;
 }
-.headr{
+.header{
     width: 1920px;
     height: 120px;
     flex-shrink: 0;
@@ -162,7 +162,10 @@ html body{
 }
 .button{
     text-decoration: none;
-}
+    }
+    .button2{
+        text-decoration: none;
+    }
 .section-about-us{
     display: grid;
     grid-template-columns: repeat(5, fr);
@@ -175,8 +178,8 @@ html body{
     margin-top: 10em;
 }
 .about-us{
-   /* display: flex;
-   flex-direction: column;
+    /* display: flex;
+    flex-direction: column;
     width: 524px;
     height: 56px;*/
     display: grid;
@@ -293,8 +296,8 @@ html body{
 }
 .container{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr) max-content;
+    grid-template-rows: 1fr max-content;
     width: 100%;
     background: #FFF;
     box-shadow: 0px -2px 8px 0px rgba(0, 0, 0, 0.10);
@@ -303,22 +306,17 @@ html body{
     gap: 1em;
 }
 .footer__menu
-.footer__social
+.footer_social-link
 .footer__copy{
     display: grid;
     grid-column: 1/2;
     
 }
-.footer__title
-.footer__text
-.footer__text2{
+.footer__about{
     display: grid;
     grid-column: 2/3;
 }
-.footer_title2
-.footer__text3
-.footer__btn
-.footer__copy2
+.footer__subscribe
 {
     display: grid;
     grid-column: 3/4;
@@ -327,13 +325,15 @@ html body{
 .footer_social-link{
 width: 40px;
 height: 40px;
+grid-row: 1/2;
+
 
 }
 .footer__menu{
     display: grid;
     grid-row: 1/2;
     align-content: stretch;
-    margin: 20%; 
+    margin: 97px 130px; 
     width: 240px;
     height: 24px;
     flex-direction: column;
@@ -353,6 +353,9 @@ height: 40px;
     grid-row: 3/4;
     width: 40px;
     height: 40px;
+    padding-left: 10em;
+    gap: 1em;
+    background-color: #989896;
     
 }
 .footer__copy{
@@ -369,6 +372,7 @@ height: 40px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin-top: 7em;
 }
 .footer__title{
     display: grid;
@@ -422,7 +426,7 @@ height: 40px;
     width: 376px;
     height: 24px;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     flex-shrink: 0;
     color: #363431;
     font-family: "VantaLight";
@@ -431,6 +435,8 @@ height: 40px;
     font-weight: 400;
     line-height: normal;
     text-transform: uppercase;
+    line-height: normal;
+    margin-top: 6em;
 }
 .footer__text3{
     display: grid;
@@ -444,11 +450,15 @@ height: 40px;
     font-style: normal;
     font-weight: 400;
     line-height: 170%; /* 27.2px */
+    margin-top: 1em
+}
+.form{
+    margin-top: 2em;
 }
 .footer__btn{
     display: grid;
     grid-row: 3/4;
-    width: 376px;
+    width: 410px;
     height: 48px;
     flex-shrink: 0;
     border: none;
@@ -456,39 +466,18 @@ height: 40px;
     height: 80px;
     flex-shrink: 0;
     color: #363431;
-    font-family: VantaLight;
+    font-family: "VantaLight";
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 170%; /* 27.2px */
-}
-.footer__btn-subscribe{
-    display: grid;
-    grid-row: 3/4;
-    width: 104px;
-    height: 48px;
-    flex-shrink: 0;
-    background: #74B900;
-    display: flex;
-    width: 104px;
-    height: 48px;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
-    color: #FFF;
-    text-align: center;
-    font-family: VantaLight;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 170%; /* 27.2px */
-    border: none;
+    margin-top: 1em
 }
 .placeholder{
     display: grid;
     grid-row: 3/4;
-    width: 344px;
-    height: 48px;
+    width: 20em;
+    height: 4em;
     flex-direction: column;
     justify-content: center;
     flex-shrink: 0;
@@ -501,6 +490,30 @@ height: 40px;
     letter-spacing: 0.42px;
     border: none;
     background: #F3F3F3;
+    
+}
+.footer__btn-subscribe{
+    display: grid;
+    grid-row: 3/4;
+    width: 20em;
+    height: 4em;
+    flex-shrink: 0;
+    background: #74B900;
+    /*display: flex;*/
+    width: 104px;
+    height: 48px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: VantaLight;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%; /* 27.2px */
+    border: none;
 }
 .footer__copy2{
     display: grid;
@@ -517,6 +530,7 @@ height: 40px;
     line-height: 170%; /* 27.2px */
     text-decoration-line: underline;
     text-decoration: none;
+    margin-top: 7em;
 }
 
 
