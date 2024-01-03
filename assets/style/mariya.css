@@ -25,9 +25,9 @@ html body {
   font-family: "Vanta", Arial, sans-serif;
 }
 .header {
-  /* width: 1920px;
-    height: 120px;
-    flex-shrink: 0;
+   width: 1200px;
+    height: 100%;
+    /*flex-shrink: 0;
     padding-left: 20em;*/
 }
 .nav {
@@ -117,8 +117,8 @@ html body {
   font-weight: 10;
   line-height: 130%; /* 72.8px */
   position: absolute;
-  top: 20%;
-  left: 50%;
+  top: 14rem;
+  left: 43rem;
   transform: translate(-50%, -50%);
 }
 .main2 {
@@ -130,13 +130,13 @@ html body {
   color: #fff;
   text-align: center;
   font-family: "VantaLight";
-  font-size: 24px;
+  font-size: 1.6rem;
   font-style: normal;
   font-weight: 100;
   line-height: normal;
   position: absolute;
   text-decoration: overline;
-  top: 39%;
+  top: 23rem;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -154,8 +154,8 @@ html body {
   font-weight: 400;
   line-height: normal;
   position: absolute;
-  top: 63%;
-  left: 50%;
+  top: 30rem;
+  left: 47.7rem;
   transform: translate(-50%, -50%);
   border-radius: 8px;
   border: 1px solid #fff;
@@ -346,17 +346,15 @@ grid-row: 1/2;
     grid-row: 1;
     width: 40px;
     height: 40px;
-    padding-left: 10em;
+    padding-left: 8rem;
     gap: 1em;
     /*background-color: #989896;*/
     margin-top: 20rem;
-    
 }
 .footer__copy {
     display: grid;
     grid-column: 1;
     grid-row: 1;
-    padding: left 20%;
     width: 512px;
     height: 24px;
     flex-direction: column;
@@ -367,7 +365,9 @@ grid-row: 1/2;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-top: 25em;}
+    margin-top: 25em;
+    padding-left: 6rem;
+  }
 
 /*.footer__copy {
   display: grid;
@@ -558,24 +558,20 @@ grid-row: 1/2;
     margin-top: 1rem;
 }
 @media (max-width: 1200px) {
-.header {
-  width: 1000px;
-}
+  .header {
+    width: 1000px;
+  }
+
 }
 @media (max-width: 1000px) {
-  .header {
-    width: 760px;
+  
   }
-}
+
 @media (max-width: 760px) {
-  header {
-    width: 420px;
-  }
+  
 }
 @media (max-width: 420px) {
-  header {
-    width: 320px;
-  }
+  
 }
 @media (max-width: 320px) {
   
