@@ -32,6 +32,266 @@ body {
   font-family: "VantaLight", Arial, sans-serif;
 }
 
+.header {
+  display: flex;
+  width: 92vw;
+  height: 17vh;
+  flex-wrap: nowrap;
+  justify-content: center;
+  /*flex-shrink: 0;
+    padding-left: 20em;*/
+}
+
+.nav {
+  display: flex;
+  /*display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 15% 2fr 26px 26px 130px 26px 216px;*/
+  justify-items: stretch;
+  align-items: center;
+  border: 1px solid green;
+  grid-gap: 5px;
+  padding: 10px;
+  height: auto;
+  background: #fff;
+  box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.1);
+  padding-left: 160px;
+  padding-right: 160px;
+}
+
+.a {
+  /*display: grid;
+    display: flex;
+    display: block;
+    grid-column: 2/3;*/
+  display: inline;
+  width: 10vw;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid green;
+  color: #363431;
+}
+
+.logo {
+  width: 164px;
+  height: 80px;
+  flex-shrink: 0;
+}
+.address {
+  display: flex;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  color: #363431;
+  width: 362px;
+  height: 56px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.tele {
+  color: #363431;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  height: 24px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.main {
+  position: relative;
+  text-align: center;
+}
+.img {
+  display: flex;
+  background-image: url(our-first-project\assets\images\rectangle.png);
+  background-position: center;
+  background-size: cover;
+  height: 50em;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.main1 {
+  display: flex;
+  width: 784px;
+  height: 128px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  text-align: center;
+  font-family: "VantaLight";
+  font-size: 56px;
+  color: #fff;
+  font-style: normal;
+  font-weight: 10;
+  line-height: 130%; /* 72.8px */
+  position: absolute;
+  top: 14rem;
+  left: 43rem;
+  transform: translate(-50%, -50%);
+}
+.main2 {
+  width: 401px;
+  height: 32px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #fff;
+  text-align: center;
+  font-family: "VantaLight";
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+  position: absolute;
+  text-decoration: overline;
+  top: 23rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.button {
+  display: flex;
+  width: 240px;
+  height: 64px;
+  justify-content: center;
+  align-items: center;
+  /* flex-shrink: 0;
+    
+    text-align: center;*/
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute;
+  top: 30rem;
+  left: 47.7rem;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+  border: 1px solid #fff;
+  background: rgba(0, 0, 0, 0);
+  color: #fff;
+}
+.button2 {
+  text-decoration: none;
+}
+
+.section-about-us {
+  display: grid;
+  grid-template-columns: repeat(5, fr);
+  grid-template-rows: repeat(2, fr);
+  align-items: center;
+  justify-items: center;
+  width: 800px;
+  height: 200px;
+  padding-left: 20em;
+  margin-top: 10em;
+}
+.about-us {
+  /* display: flex;
+    flex-direction: column;
+    width: 524px;
+    height: 56px;*/
+  display: grid;
+  grid-column: 3/4;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #363431;
+  text-align: center;
+  font-family: "Vanta";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  /*box-sizing: border-box;
+	min-height: 100%;
+	padding-bottom: 90px;*/
+}
+.section1 .section2 .section3 .section4 .section5 {
+  display: grid;
+  grid-row: 2/3;
+  width: 240px;
+  height: 88px;
+  flex-shrink: 0;
+  color: #363431;
+  text-align: center;
+  font-family: "VantaLight";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 30px */
+  padding: 32px;
+}
+.section1 {
+  display: grid;
+  grid-column: 1/2;
+  text-align: center;
+}
+.section2 {
+  display: grid;
+  grid-column: 2/3;
+  text-align: center;
+}
+.section3 {
+  display: grid;
+  grid-column: 3/4;
+  text-align: center;
+}
+.section4 {
+  display: grid;
+  grid-column: 4/5;
+  text-align: center;
+}
+.section5 {
+  display: grid;
+  grid-column: 5/6;
+  text-align: center;
+}
+.section-img1 .section-img2 .section-img3 .section-img4 .section-img5 {
+  display: grid;
+  grid-row: 1/2;
+  gap: 132;
+  padding: 168px;
+}
+.section-img1 {
+  display: grid;
+  grid-column: 1/2;
+  width: 104px;
+  height: 104px;
+  flex-shrink: 0;
+}
+.section-img2 {
+  display: grid;
+  grid-column: 2/3;
+  width: 117px;
+  height: 104px;
+  flex-shrink: 0;
+}
+.section-img3 {
+  display: grid;
+  grid-column: 3/4;
+  width: 104px;
+  height: 104px;
+  flex-shrink: 0;
+}
+.section-img4 {
+  display: grid;
+  grid-column: 4/5;
+  width: 104px;
+  height: 104px;
+  flex-shrink: 0;
+}
+.section-img5 {
+  display: grid;
+  grid-column: 5/6;
+  width: 104px;
+  height: 104px;
+  flex-shrink: 0;
+}
+
 .section-studio {
   display: flex;
   flex-direction: column;
@@ -227,6 +487,283 @@ body {
   background-color: #363431;
   left: 0;
   top: 100%;
+}
+
+.footer {
+  display: grid;
+  width: 100%;
+  height: 50em;
+}
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) max-content;
+  grid-template-rows: 1fr max-content;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0px -2px 8px 0px rgba(0, 0, 0, 0.1);
+  height: 30em;
+  margin-top: 20em;
+  gap: 1em;
+}
+.footer__menu,
+.footer_social-link,
+.footer__copy {
+  display: grid;
+  grid-column: 1/2;
+}
+.footer__about {
+  display: grid;
+  grid-column: 2/3;
+}
+.footer__subscribe {
+  display: grid;
+  grid-column: 3/4;
+}
+.footer_social-link {
+  width: 40px;
+  height: 40px;
+  grid-row: 1/2;
+}
+.footer__menu {
+  display: grid;
+  grid-row: 1/2;
+  /*align-content: stretch;*/
+  margin: 97px 130px;
+  /*width: 240px;*/
+  height: 8rem;
+  flex-direction: column;
+  /*justify-content: center;*/
+  flex-shrink: 0;
+  color: #363431;
+  font-family: VantaLight;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+}
+.footer__menu-list {
+  display: grid;
+  list-style-type: none;
+  align-items: end;
+}
+.footer__social {
+  /*display: grid;*/
+  display: flex;
+  grid-column: 1;
+  grid-row: 1;
+  width: 40px;
+  height: 40px;
+  padding-left: 8rem;
+  gap: 1em;
+  /*background-color: #989896;*/
+  margin-top: 20rem;
+}
+.footer__copy {
+  display: grid;
+  grid-column: 1;
+  grid-row: 1;
+  width: 512px;
+  height: 24px;
+  flex-direction: column;
+  justify-content: center;
+  color: #828282;
+  font-family: "VantaLight";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 25em;
+  padding-left: 6rem;
+}
+
+/*.footer__copy {
+  display: grid;
+  grid-row: 4/5;
+  padding: left 20em;
+  width: 512px;
+  height: 24px;
+  flex-direction: column;
+  justify-content: center;
+  color: #828282;
+  font-family: "VantaLight";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}*/
+.footer__title {
+  display: grid;
+  grid-row: 1/2;
+  width: 240px;
+  height: 24px;
+  justify-content: start;
+  flex-direction: column;
+  color: #363431;
+  font-family: "VantaLight";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-top: 6em;
+}
+.footer__text {
+  display: grid;
+  grid-row: 2/3;
+  width: 376px;
+  height: 136px;
+  flex-shrink: 0;
+  color: #363431;
+  font-family: "VantaLight";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 27.2px */
+  margin-top: -5rem;
+}
+.footer__text2 {
+  display: grid;
+  width: 376px;
+  height: 67px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #363431;
+  font-family: VantaLight;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  margin-top: -5.5em;
+}
+.footer__text3 {
+  display: grid;
+  width: 376px;
+  height: 67px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #363431;
+  font-family: "VantaLight";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  margin-top: -2rem;
+}
+/*.footer__text3 {
+    display: grid;
+    grid-row: 2/3;
+    width: 376px;
+    height: 80px;
+    flex-shrink: 0;
+    color: #363431;
+    font-family: VantaLight;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%; 
+    margin-top: 1em;
+}*/
+.footer_title2 {
+  display: grid;
+  grid-row: 1/2;
+  width: 376px;
+  height: 24px;
+  flex-direction: column;
+  justify-content: start;
+  flex-shrink: 0;
+  color: #363431;
+  font-family: "VantaLight";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  line-height: normal;
+  margin-top: 6em;
+}
+
+.form {
+  display: flex;
+  margin-top: 2em;
+}
+.footer__btn {
+  display: flex;
+  grid-row: 3/4;
+  /*width: 410px;
+    height: 48px;
+    flex-shrink: 0;*/
+  border: none;
+  width: 376px;
+  height: 80px;
+  /*flex-shrink: 0;*/
+  color: #363431;
+  font-family: "VantaLight";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 27.2px */
+  margin-top: -3rem;
+}
+.placeholder {
+  display: flex;
+  /*grid-row: 3/4;*/
+  width: 14rem;
+  height: -2rem;
+  /*flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;*/
+  color: #aeacaa;
+  font-family: VantaLight;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 23.8px */
+  letter-spacing: 0.42px;
+  border: none;
+  background: #f3f3f3;
+}
+.footer__btn-subscribe {
+  display: flex;
+  /* grid-row: 3/4;
+    width: 20em;
+    height: 4em;
+    flex-shrink: 0;
+    flex-direction: column;
+    flex-shrink: 0;*/
+  background: #74b900;
+  width: 104px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  font-family: VantaLight;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 27.2px */
+  border: none;
+}
+.footer__copy2 {
+  display: grid;
+  grid-row: 4/5;
+  width: 344px;
+  height: 24px;
+  flex-direction: column;
+  justify-content: start;
+  color: #828282;
+  font-family: "VantaLight";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 27.2px */
+  text-decoration-line: underline;
+  text-decoration: none;
+  margin-top: 1rem;
 }
 
 @media screen and (min-width: 320px) and (max-width: 992px) {
