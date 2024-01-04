@@ -177,7 +177,7 @@ body {
 }
 .button2 {
   text-decoration: none;
-  color: #fff;  
+  color: #fff;
 }
 
 .section-about-us {
@@ -814,6 +814,10 @@ body {
     justify-content: center;
     align-items: center;
     padding: 0% 5% 5% 5%;
+  }
+  .section-promotions__content {
+    padding-top: 5%;
+    text-align: left;
   }
 }
 
