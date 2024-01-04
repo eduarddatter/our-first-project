@@ -49,7 +49,6 @@ body {
     grid-template-columns: 15% 2fr 26px 26px 130px 26px 216px;*/
   justify-items: stretch;
   align-items: center;
-  border: 1px solid green;
   grid-gap: 5px;
   padding: 10px;
   height: auto;
@@ -68,7 +67,6 @@ body {
   width: 10vw;
   text-align: center;
   text-decoration: none;
-  border: 1px solid green;
   color: #363431;
 }
 
@@ -188,7 +186,7 @@ body {
   justify-items: center;
   width: 88%;
   margin-top: 6em;
-  margin: 8 auto 0 auto;
+  margin: 8% auto 0 auto;
 }
 .about-us {
   /* display: flex;
@@ -492,7 +490,6 @@ body {
 .footer {
   display: grid;
   width: 100%;
-  height: 50em;
 }
 .footer-container {
   display: grid;
