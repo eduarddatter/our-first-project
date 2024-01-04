@@ -2,7 +2,7 @@
   font-family: "VantaLight";
   src: url(../fonts/AnyConv.com__ofont.ru_VantaLight.woff),
     url(../fonts/AnyConv.com__ofont.ru_VantaLight.woff2);
-  font-size: 400;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -10,7 +10,7 @@
   font-family: "Vanta";
   src: url(../fonts/AnyConv.com__ofont.ru_Vanta.woff),
     url(../fonts/AnyConv.com__ofont.ru_Vanta.woff2);
-  font-size: 400;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -59,7 +59,8 @@ body {
 
 .section-studio__items {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr 1fr;
   grid-template-areas:
     "img1 img1 img2 img2"
@@ -231,6 +232,7 @@ body {
 @media screen and (min-width: 320px) and (max-width: 992px) {
   .section-studio__items {
     max-width: 100%;
+    max-height: 90vh;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
@@ -253,7 +255,7 @@ body {
     position: relative;
   }
   .section__title {
-    font-size: 1.75rem;
+    font-size: 1.65rem;
   }
   .section-studio__text {
     font-size: 1rem;
