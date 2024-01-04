@@ -12,7 +12,7 @@
 @font-face {
   font-family: "Vanta";
   src: url(../fonts/AnyConv.com__ofont.ru_Vanta.woff),
-    url(../fonts/AnyConv.com__ofont.ru_Vanta.woff2);
+  url(../fonts/AnyConv.com__ofont.ru_Vanta.woff2);
   font-size: 400;
   font-style: normal;
 }
@@ -25,8 +25,11 @@ html body {
   font-family: "Vanta", Arial, sans-serif;
 }
 .header {
-    width: 1200px;
-    height: 100%;
+    display: flex;
+    width: 92vw;
+    height: 17vh;
+    flex-wrap: nowrap;
+    justify-content: center;
     /*flex-shrink: 0;
     padding-left: 20em;*/
 }
@@ -557,40 +560,65 @@ grid-row: 1/2;
     text-decoration: none;
     margin-top: 1rem;
 }
-@media (max-width: 1200px) {
-  .header {
-    width: 1000px;
+/*@media (max-width: 1200px) {
+  .nav {
+    min-width: 1000px;
   }
 
+  .section-about-us {
+    grid-template-columns: 1fr 280px;
+    min-width: 1000px;
+  }
+  .container {
+    grid-template-columns: 1fr 280px;
+    min-width: 1000px;
+  }
 }
 @media (max-width: 1000px) {
-  .header {
-    width: 760px;
+  .nav {
+    width: 768px;
   }
-  }
-
-@media (max-width: 760px) {
-  .header {
-    width: 420px;
-  }
+  .section-about-us {
+    grid-template-columns: 1fr 250px;
+    width: 768px;
+  } 
+  .container {
+    grid-template-columns: 1fr 250px;
+    width: 768px;
+  }  
 }
-@media (max-width: 420px) {
-  .header {
+
+@media (max-width: 768px) {
+  .nav {
+    min-width: 320px;
+  }
+  .section-about-us {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1rf;
+    grid-auto-rows: 100px;
+    width: 320px;
+  }
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1rf;
+    grid-auto-rows: 100px;
     width: 320px;
   }
 }
+
 @media (max-width: 320px) {
-  /*.header {
-display: none;  
-}*/
+  .nav {
+    min-width: 100%;
+  }
   .main {
     width: 264vw;
     height: 260vh; 
   }
   .main1 {
-    width: 288px;
-    height: 120px;
-    font-size: 30px;
+    width: 93vw;
+    height: 30vh;
+    font-size: 2.5em;
+    padding-right: 15em;
   }
   .main2 {
     width: 288px;
@@ -603,9 +631,9 @@ display: none;
     height: 56px;
     font-size: 14px;
   }
-  .logo {
+    .logo {
     width: 94px;
     height: 46px;
     flex-shrink: 0;
   }
-}
+}*/
