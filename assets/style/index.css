@@ -131,7 +131,7 @@ body {
   line-height: 130%; /* 72.8px */
   position: absolute;
   top: 14rem;
-  left: 43rem;
+  left: 46.5rem;
   transform: translate(-50%, -50%);
 }
 .main2 {
@@ -168,7 +168,7 @@ body {
   line-height: normal;
   position: absolute;
   top: 30rem;
-  left: 47.7rem;
+  left: 48rem;
   transform: translate(-50%, -50%);
   border-radius: 8px;
   border: 1px solid #fff;
