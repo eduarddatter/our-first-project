@@ -49,7 +49,6 @@ body {
     grid-template-columns: 15% 2fr 26px 26px 130px 26px 216px;*/
   justify-items: stretch;
   align-items: center;
-  border: 1px solid green;
   grid-gap: 5px;
   padding: 10px;
   height: auto;
@@ -68,7 +67,6 @@ body {
   width: 10vw;
   text-align: center;
   text-decoration: none;
-  border: 1px solid green;
   color: #363431;
 }
 
@@ -131,7 +129,7 @@ body {
   line-height: 130%; /* 72.8px */
   position: absolute;
   top: 14rem;
-  left: 43rem;
+  left: 46.5rem;
   transform: translate(-50%, -50%);
 }
 .main2 {
@@ -168,7 +166,7 @@ body {
   line-height: normal;
   position: absolute;
   top: 30rem;
-  left: 47.7rem;
+  left: 48rem;
   transform: translate(-50%, -50%);
   border-radius: 8px;
   border: 1px solid #fff;
@@ -497,7 +495,6 @@ body {
 .footer {
   display: grid;
   width: 100%;
-  height: 50em;
 }
 .footer-container {
   display: grid;
