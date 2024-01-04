@@ -188,7 +188,7 @@ body {
   justify-items: center;
   width: 88%;
   margin-top: 6em;
-  margin: 8 auto 0 auto;
+  margin: 8% auto 0 auto;
 }
 .about-us {
   /* display: flex;
@@ -382,6 +382,7 @@ body {
 .section-studio__text {
   max-width: 70%;
   padding: 48px 0px 48px 48px;
+  text-align: left;
   font-family: "VantaLight", Arial, sans-serif;
   font-size: 1.75rem;
   font-weight: 400;
@@ -404,7 +405,7 @@ body {
   /* display: flex;
   flex-direction: column; */
   padding-top: 5%;
-  padding-bottom: 8%;
+  padding-bottom: 1%;
   justify-content: center;
   align-items: center;
   max-width: 1920px;
@@ -422,6 +423,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.section-promotions__content {
+  text-align: left;
 }
 
 .section-promotions__image img {
