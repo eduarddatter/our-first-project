@@ -188,7 +188,7 @@ body {
   justify-items: center;
   width: 88%;
   margin-top: 6em;
-  margin: 0 auto;
+  margin: 8 auto 0 auto;
 }
 .about-us {
   /* display: flex;
@@ -404,7 +404,7 @@ body {
   /* display: flex;
   flex-direction: column; */
   padding-top: 5%;
-  padding-bottom: 10%;
+  padding-bottom: 8%;
   justify-content: center;
   align-items: center;
   max-width: 1920px;
